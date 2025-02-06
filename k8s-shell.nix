@@ -23,6 +23,7 @@ in pkgs.mkShell {
 
     # Additional helpful tools
     k9s
+    argocd
     kind
     kubectx
     kubelogin

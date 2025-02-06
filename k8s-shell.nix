@@ -61,7 +61,9 @@ in pkgs.mkShell {
       echo "- k9s $(k9s version 2>/dev/null | head -n1)"
       echo "- kubectx $(kubectx --version 2>/dev/null)"
       echo "- stern $(stern --version 2>/dev/null)"
-      echo "\n💡 Tip: Run 'show_versions' to see this information again"
+      echo "- $(kind version 2>/dev/null)"
+      echo "- $(argocd version --client --short 2>/dev/null)"
+      echo "\n💡 Tip: Run 'show_versions' to see this information again"    
     }
 
     # Show initial versions

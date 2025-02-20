@@ -20,6 +20,7 @@ in pkgs.mkShell {
     kubectl
     cilium-cli
     istioctl
+    kubecm
 
     # Additional helpful tools
     k9s

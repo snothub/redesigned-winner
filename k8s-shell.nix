@@ -50,6 +50,8 @@ in pkgs.mkShell {
     export ISTIO_HOME="$PWD/.istio"
     mkdir -p "$ISTIO_HOME"
 
+    alias k=kubectl
+
     # Function to display tool versions
     show_versions() {
       echo "🛠️  Kubernetes Development Environment"

@@ -18,6 +18,7 @@ in pkgs.mkShell {
     # Core tools
     kubernetes-helm
     kubectl
+    kubeseal
     cilium-cli
     istioctl
     kubecm
@@ -61,6 +62,7 @@ in pkgs.mkShell {
       helm version --short 2>/dev/null | sed 's/^/- helm: /'
       cilium version --client 2>/dev/null | head -n1 | sed 's/^/- cilium: /'
       kubecm version 2>/dev/null | head -n1 | sed 's/^/- kubecm: /'
+      kubeseal version 2>/dev/null | head -n1 | sed 's/^/- kubeseal: /'
       istioctl version --remote=false 2>/dev/null | head -n1 | sed 's/^/- istioctl: /'
       echo "- k9s $(k9s version 2>/dev/null | head -n1)"
       echo "- kubectx $(kubectx --version 2>/dev/null)"

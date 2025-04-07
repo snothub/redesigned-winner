@@ -29,6 +29,7 @@ in pkgs.mkShell {
     kind
     kubectx
     kubelogin
+    kubectl-tree
     stern
   ];
 

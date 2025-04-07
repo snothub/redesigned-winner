@@ -53,6 +53,7 @@ in pkgs.mkShell {
     mkdir -p "$ISTIO_HOME"
 
     alias k=kubectl
+    alias kt=kubectl-tree
 
     # Function to display tool versions
     show_versions() {
@@ -67,6 +68,7 @@ in pkgs.mkShell {
       echo "- k9s $(k9s version 2>/dev/null | head -n1)"
       echo "- kubectx $(kubectx --version 2>/dev/null)"
       echo "- kubeseal $(kubeseal --version 2>/dev/null)"
+      echo "- kubectl-tree"
       echo "- stern $(stern --version 2>/dev/null)"
       echo "- $(kind version 2>/dev/null)"
       echo "- $(argocd version --client --short 2>/dev/null)"

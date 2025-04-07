@@ -68,7 +68,7 @@ in pkgs.mkShell {
       echo "- k9s $(k9s version 2>/dev/null | head -n1)"
       echo "- kubectx $(kubectx --version 2>/dev/null)"
       echo "- kubeseal $(kubeseal --version 2>/dev/null)"
-      echo "- kubectl-tree"
+      echo "- kubectl tree"
       echo "- stern $(stern --version 2>/dev/null)"
       echo "- $(kind version 2>/dev/null)"
       echo "- $(argocd version --client --short 2>/dev/null)"

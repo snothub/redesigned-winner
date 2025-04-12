@@ -31,6 +31,7 @@ in pkgs.mkShell {
     kubelogin
     kubectl-tree
     stern
+    gum
   ];
 
   shellHook = ''

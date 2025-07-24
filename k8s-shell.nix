@@ -72,6 +72,7 @@ in pkgs.mkShell {
       echo "- kubeseal $(kubeseal --version 2>/dev/null)"
       echo "- kubectl tree"
       echo "- stern $(stern --version 2>/dev/null)"
+      echo "- kustomize $(kustomize version 2>/dev/null)"
       echo "- $(kind version 2>/dev/null)"
       echo "- $(argocd version --client --short 2>/dev/null)"
       echo "\n💡 Tip: Run 'show_versions' to see this information again"    

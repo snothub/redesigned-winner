@@ -22,6 +22,7 @@ in pkgs.mkShell {
     cilium-cli
     istioctl
     kubecm
+    kustomize
 
     # Additional helpful tools
     k9s
